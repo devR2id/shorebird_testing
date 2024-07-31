@@ -25,3 +25,11 @@ class UpdateException extends DatabaseException {
 class DeleteException extends DatabaseException {
   DeleteException(super.message);
 }
+
+class SecureStorageException implements Exception {
+  final String message;
+  SecureStorageException(this.message);
+
+  @override
+  String toString() => "SecureStorageException: $message";
+}
