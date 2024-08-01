@@ -12,3 +12,10 @@ flutter pub add intl
 flutter pub add sqflite
 flutter pub add path
 ```
+# Commands to generate icon
+
+```sh
+flutter clean
+flutter pub get
+dart run flutter_launcher_icons -f app_icon_config.yaml
+```
