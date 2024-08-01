@@ -16,7 +16,7 @@ class HeaderWidget extends StatelessWidget implements PreferredSizeWidget {
             padding: const EdgeInsets.only(right: 16),
             child: DropdownButton(
                 underline: const SizedBox(),
-                icon: const Icon(Icons.language, size: 32),
+                icon: const Icon(Icons.language, size: 32, color: Colors.black),
                 items: Language.list()
                     .map<DropdownMenuItem<Language>>((language) => DropdownMenuItem<Language>(
                         value: language,

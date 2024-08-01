@@ -11,6 +11,6 @@ class HomePage extends StatelessWidget {
     return Scaffold(
         appBar: HeaderWidget(title: AppLocalizations.of(context)!.home),
         drawer: const Drawer(child: MenuWidget()),
-        body: const Center(child: Text("HOME PAGE")));
+        body: const Center(child: Text("HOME PAGE UPDATED", style: TextStyle(fontSize: 32))));
   }
 }
