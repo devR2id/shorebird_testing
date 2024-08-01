@@ -16,6 +16,6 @@ class _StoragePageState extends State<StoragePage> {
     return Scaffold(
         appBar: HeaderWidget(title: AppLocalizations.of(context)!.storage),
         drawer: const Drawer(child: MenuWidget()),
-        body: const Center(child: Text("STROAGE")));
+        body: const Center(child: Text("STROAGE", style: TextStyle(fontSize: 32))));
   }
 }
