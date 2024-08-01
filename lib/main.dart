@@ -1,4 +1,5 @@
-import 'package:apptesting/presentation/home_page.dart';
+import 'package:apptesting/core/routing/app_routing.dart';
+import 'package:apptesting/core/routing/router_service.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
@@ -7,6 +8,7 @@ void main() {
 }
 
 class MainApp extends StatefulWidget {
+  static final GlobalKey<NavigatorState> navigatorKey = GlobalKey<NavigatorState>();
   const MainApp({super.key});
 
   @override
@@ -31,6 +33,9 @@ class _MainAppState extends State<MainApp> {
         localizationsDelegates: AppLocalizations.localizationsDelegates,
         supportedLocales: AppLocalizations.supportedLocales,
         locale: _locale,
-        home: const HomePage());
+        navigatorKey: MainApp.navigatorKey,
+        navigatorObservers: [routeObserver],
+        initialRoute: AppRouter.home,
+        routes: AppRouter.routes(context));
   }
 }

@@ -1,4 +1,6 @@
 {
   "hello": "Hola",
-  "welcome": "Bienvenido"
+  "welcome": "Bienvenido",
+  "home": "Inicio",
+  "storage": "Almacenamiento"
 }

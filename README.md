@@ -12,7 +12,11 @@ flutter pub add intl
 flutter pub add sqflite
 flutter pub add path
 ```
-# Commands to generate icon
+# Generate localizations
+
+Ejecutar flutter pub get para que se vuelvan a generar los .arb
+
+# Generate app icon
 
 ```sh
 flutter clean
